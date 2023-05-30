@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drag and Drop Sortable List | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <ul class="sortable-list">
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://avatars.mds.yandex.net/i?id=ca2a4f4115188257ea7e7fdebd807721_sr-4489749-images-thumbs&n=13">
+          <span>JOHANN SEBASTIAN BACH</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://yandex-images.clstorage.net/I54mpd116/73d563owYQ1/FZdmJUUw21yZp-S4Sc_L7Xs_AmlxgTBiaGnF4Zxy4aoLxi2YUHHoTlk-VpW7VzB8YJyd3AyK-zGnPniH7UYRJMPENSOCoxnc2acn-g8Nii-5PMBodIDw9H2xSv1BrG70080xhxsj_BvNatAHr0cq5_HO3ckTkKa77fgimb7Qh_VYEyzoS2CcGVx5I3kMwkZhpjwKJuNAbWxrss23TO-lv50BNsxZaXgZxaZUVm6ApOItQ9SD3ZovsuM0KF7xW4J03ZLkJQRj3hbd_Sn8A4PLKig4DWCsSSTk4vrDs0IvJLudCjoNHS-6W0im0pepSuEmLchayF0cqDOkfKAactBFdZnTrezH5lUe0X0rdIhKzqAisQluoc-nYKC6if_JqCO3XQF9Dhtnt9jB7R0dLgAjpi0J3whVF23z6PbuGT0fRvTbWqDiiuOd0J867LpDyINlYzwB6ObJYakr-wCxQmjq8lrNPsnd7fcShCeUWiIKJmUnQx-DFFRocO_zpla7l4V6H9kioAovkdgdumT5w8dIaCX5COfjD-diq3zLv00nK_MRT7uEWyy42U_hlV4mDSykawZXBNsT5fvlvaHZ91BAM1TU7-TLL9YcWTyu9QPDQu5l9YqmKgMkLKj7wXzIbWu_kwWySJ6gd5TN4NsQY4kuoegM3klQ0uxwYrAmkvacCjrfmqOrBasU35i84LoMCMMu7HaPJ-hKY-kofQNzS-_qctQNMITR7HWdiC7al6VFpiqvhFkMExdieSxyKpPwksF-l5tgYI_rE9Gd_qY8gYoOYqu-y6-vRiVlrbIIdgxoYPrVhvnNFO5w0swr1NWix2llqAJVidqWrTGm9uWRcNoB8pGeJ-THppBc2L2p_chMjuGjNg_gbskuYaf0xfAPre1xX81zThRmOBJG69eY5QRoYOsJUscckGb2a7thWXeZx3VWUqIhC6icGdn5YrQJwkDjpvGPIWrPo-Mq_cY_QQ">
+          <span>WOLFGANG AMADEUS MOZART</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://avatars.mds.yandex.net/i?id=d32e171c1902b70285b36bbc5d487eda_sr-4438614-images-thumbs&n=13">
+          <span>LUDWIG VAN BEETHOVEN</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://yandex-images.clstorage.net/I54mpd116/73d563owYQ1/FZdmJUUw21yZp-S4Sc_L7Xs_AmlxgTBiaGnFdchw9OlfhjjMRPApDU0_QwJu1WX8NUocHozeuuUmPviGbgdQ5EBHtSOCoxnc2acn-g8Nii-5PMBodIDw9H2xSv1BrG70080xhxsj_BvNatAHr0cq5_HO3ckTkKa77fgimb7Qh_VYEyzoS2CcGVx5I3kMwkZhpjwKJuNAbWxrss23TO-lv50BNsxZaXgZxaZUVm6ApOItQ9SD3ZovsuM0KF7xW4J03ZLkJQRj3hbd_Sn8A4PLKig4DWCsSSTk4vrDs0IvJLudCjoNHS-6W0im0pepSuEmLchayF0cqDOkfKAactBFdZnTrezH5lUe0X0rdIhKzqAisQluoc-nYKC6if_JqCO3XQF9Dhtnt9jB7R0dLgAjpi0J3whVF23z6PbuGT0fRvTbWqDiiuOd0J867LpDyINlYzwB6ObJYakr-wCxQmjq8lrNPsnd7fcShCeUWiIKJmUnQx-DFFRocO_zpla7l4V6H9kioAovkdgdumT5w8dIaCX5COfjD-diq3zLv00nK_MRT7uEWyy42U_hlV4mDSykawZXBNsT5fvlvaHZ91BAM1TU7-TLL9YcWTyu9QPDQu5l9YqmKgMkLKj7wXzIbWu_kwWySJ6gd5TN4NsQY4kuoegM3klQ0uxwYrAmkvacCjrfmqOrBasU35i84LoMCMMu7HaPJ-hKY-kofQNzS-_qctQNMITR7HWdiC7al6VFpiqvhFkMExdieSxyKpPwksF-l5tgYI_rE9Gd_qY8gYoOYqu-y6-vRiVlrbIIdgxoYPrVhvnNFO5w0swr1NWix2llqAJVidqWrTGm9uWRcNoB8pGeJ-THppBc2L2p_chMjuGjNg_gbskuYaf0xfAPre1xX81zThRmOBJG69eY5QRoYOsJUscckGb2a7thWXeZx3VWUqIhC6icGdn5YrQJwkDjpvGPIWrPo-Mq_cY_QQ">
+          <span>PYOTR ILYCH TCHAIKOVSKY</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      <li class="item" draggable="true">
+        <div class="details">
+          <img src="https://avatars.mds.yandex.net/i?id=644b950b8ad2d6d7f1b0de76f1722c30_sr-4903727-images-thumbs&n=13">
+          <span>WILHELM RICHARD WAGNER</span>
+        </div>
+        <i class="uil uil-draggabledots"></i>
+      </li>
+      
+    </ul>
+
+  </body>
+</html>
